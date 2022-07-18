@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Racing+Sans+One&family=Roboto&display=swap" rel="stylesheet">
+    <title>F1 ARG</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="head-title">
+            <img src= "../Multimedia/F1.png" alt="logo-f1" class="img-logo">
+            <h1>FORMULA ARG</h1>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li class="Equipos"><a href="../Pages/equipos.html">Equipos</a></li>
+                <li class="Corredores"><a href="../Pages/corredores.html">Corredores</a></li>
+                <li class="inicio"><a href="../index.html">Inicio</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="cont-form">
+        <div>Crear Cuenta </div>
+        <form action="procesar.php" class="form">
+            <fieldset>
+            <span>Nombre:</span>
+            <input type="text" name="Nombre"><br>
+            <span>Apellido:</span>
+            <input type="text" name="Apellido"><br>
+            <span>DNI:</span>
+            <input type="number" name="DNI"><br>
+            <span>Genero:</span>
+            <span>Hombre</span> <input type="radio"name="genero" id="Hombre"><br>
+            <span>Mujer:</span> <input type="radio" name="genero" id="Mujer"><br>
+            <span>Email:</span>
+            <input type="email" id="Email"><br>
+            <span>Acepto los terminos y condiciones</span>
+            <input type="checkbox" name="Acepta" value="1"><br>
+            <input type="submit" value="Enviar" ><br>
+            <input type="reset" value="Limpiar"><br>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

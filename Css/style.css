@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header"
+        "article1 article2"
+        "article3 article3"
+    ;
+    gap: .5em .4em;
+}
+/* HEADER */
+.header-container{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+.head-title{
+    display: flex;
+    font: 2em 'Krona One', sans-serif;
+    border-bottom: solid red;
+    justify-content: space-around;
+}
+.img-logo{
+    width: 120px;
+    height: 80px;
+    display: flex;
+    align-self: center;
+}
+.suscribe{
+    display: flex;
+    align-items: center;
+    background-color: rgb(204, 70, 70);
+    padding: 0 1rem 0 1rem ;
+    margin: 1rem 0 1rem 0;
+    border-radius: 1rem;
+    
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font: bold 2em 'Roboto', sans-serif;
+}
+.menu{
+    border-radius: 1rem;
+    margin-top: 0;
+    padding-left: 0;
+    background-color: red;
+}
+li{
+    display: inline;
+    padding: 10rem;
+}
+a{
+    text-decoration: none; 
+    color: black;}
+/* MAIN */
+.article1{
+    grid-area: article1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    font: 2em 'Roboto', sans-serif;
+}
+.article2{
+    grid-area: article2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    font: 2em 'Roboto', sans-serif;
+}
+.article3{
+    grid-area: article3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: 2em 'Roboto', sans-serif;
+    border:solid red;
+    border-radius: 10px;
+    margin: 2rem;
+}
+.contenido-art3{
+    display: flex;
+    padding: 1rem;
+    background-color: rgba(223, 170, 170, 0.233);
+    border-radius: 10px;
+    margin: .5rem;
+}
+.subt-art3{
+    font-size: 1em;
+    font-weight: bold;
+}
+.img-juego{
+    width: 700px;
+    display: flex;
+    align-items: flex-end;
+}
+.contenido-art3 p{
+    font-size:1em;
+    text-align: justify;
+    padding-left: 1rem;
+    margin: .5rem;
+}
+.texto-art3{
+    align-self: center;
+}
+/* PAGINA EQUIPOS */
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
+    grid-template-rows: minmax(auto, 1fr);     
+    gap:1rem;
+}
+.equipo{
+    display: flex;
+    padding: 0.5rem 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;   
+    font: 'Krona One', sans-serif;
+}
+/* PAGINA SUSCRIBE */
+.cont-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 3em;
+    
+}
+.form{
+    text-align: center;
+    align-self: center;
+    width: fit-content;
+    
+}
