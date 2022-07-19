@@ -29,8 +29,8 @@ body {
     justify-content: space-around;
 }
 .img-logo{
-    width: 120px;
-    height: 80px;
+    width: 150px;
+    height: 110px;
     display: flex;
     align-self: center;
 }
@@ -101,7 +101,7 @@ a{
     font-weight: bold;
 }
 .img-juego{
-    width: 700px;
+    width: 30%;
     display: flex;
     align-items: flex-end;
 }
@@ -115,11 +115,11 @@ a{
     align-self: center;
 }
 /* PAGINA EQUIPOS */
-.container{
+.equip-container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
-    grid-template-rows: minmax(auto, 1fr);     
-    gap:1rem;
+    grid-template-rows: minmax(5, 1fr);     
+    gap:2rem;
 }
 .equipo{
     display: flex;
@@ -128,19 +128,58 @@ a{
     justify-content: space-around;
     align-items: center;
     text-align: justify;   
-    font: 'Krona One', sans-serif;
+    font: 1.5em 'roboto', sans-serif;
+}
+.titulo-equipos{
+    font: bold 3em 'roboto', sans-serif;
+    text-align: center;
+}
+.img-equipos{
+    width: 100%;
 }
 /* PAGINA SUSCRIBE */
+.head-subs{
+    display: flex;
+    font: 2em 'Krona One', sans-serif;
+    border-bottom: solid red;
+    justify-content: center;
+    gap: 1rem;
+}
 .cont-form{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 3em;
-    
+    font: 3em 'roboto', sans-serif;
 }
-.form{
+form{
     text-align: center;
     align-self: center;
     width: fit-content;
-    
+    font: .8em sans-serif;
+    border-radius: 5px;
+}
+input {
+    font-size: .5em;
+}
+/* PAGINA CORREDORES */
+.corredor-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
+    grid-template-rows: minmax(5, 1fr);     
+}
+.corredor{
+    display: flex;
+    padding: 0.5rem 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;   
+    font: 1.5em 'roboto', sans-serif;
+}
+.img-corredor{
+    width: 100%;
+}
+.titulo-corredor{
+    font: bold 3em 'roboto', sans-serif;
+    text-align: center;
 }
