@@ -13,6 +13,7 @@ body {
         "header header"
         "article1 article2"
         "article3 article3"
+        "footer footer"
     ;
     gap: .5em .4em;
 }
@@ -113,6 +114,22 @@ a{
 }
 .texto-art3{
     align-self: center;
+}
+/* FOOTER */
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    border-top: solid black 1px;
+    padding: 1rem;
+    font: x-large 'roboto', sans-serif;
+    margin: 3em;
+}
+.caja1-footer{
+    text-align: center;
+}
+.caja2-footer{
+    text-align: center;
 }
 /* PAGINA EQUIPOS */
 .equip-container{
