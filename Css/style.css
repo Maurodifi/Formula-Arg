@@ -7,15 +7,17 @@ body {
 }
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
         "header header"
         "article1 article2"
         "article3 article3"
+        "article4 article4"
         "footer footer"
     ;
-    gap: .5em .4em;
+    gap: 1rem;
+    margin: 1rem;
 }
 /* HEADER */
 .header-container{
@@ -25,30 +27,32 @@ body {
 }
 .head-title{
     display: flex;
-    font: 2em 'Krona One', sans-serif;
+    font: x-large 'Krona One', sans-serif;
     border-bottom: solid red;
     justify-content: space-around;
 }
+.head-title h1 {
+    margin: 0;
+    align-self: center;
+}
 .img-logo{
-    width: 150px;
-    height: 110px;
+    width: 8%;
     display: flex;
     align-self: center;
 }
 .suscribe{
     display: flex;
-    align-items: center;
+    align-self: center;
     background-color: rgb(204, 70, 70);
-    padding: 0 1rem 0 1rem ;
+    padding: 0 1rem 0 1rem;
     margin: 1rem 0 1rem 0;
     border-radius: 1rem;
-    
 }
 .nav{
     display: flex;
     justify-content: center;
     margin: 0;
-    font: bold 2em 'Roboto', sans-serif;
+    font: bold large 'Roboto', sans-serif;
 }
 .menu{
     border-radius: 1rem;
@@ -70,7 +74,9 @@ a{
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 2rem;
-    font: 2em 'Roboto', sans-serif;
+    font: large 'Roboto', sans-serif;
+    background-color: rgba(223, 170, 170, 0.233);
+    border-radius: 20px;
 }
 .article2{
     grid-area: article2;
@@ -78,14 +84,20 @@ a{
     flex-direction: column;
     align-items: center;
     padding: 0.5rem 2rem;
-    font: 2em 'Roboto', sans-serif;
+    font: large 'Roboto', sans-serif;
+    background-color: rgba(223, 170, 170, 0.233);
+    border-radius: 20px;
+}
+.img-youtube{
+    height: 300px;
+    width: 600px;
 }
 .article3{
     grid-area: article3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font: 2em 'Roboto', sans-serif;
+    font: large 'Roboto', sans-serif;
     border:solid red;
     border-radius: 10px;
     margin: 2rem;
@@ -98,38 +110,66 @@ a{
     margin: .5rem;
 }
 .subt-art3{
-    font-size: 1em;
+    font-size: large;
     font-weight: bold;
 }
 .img-juego{
     width: 30%;
-    display: flex;
-    align-items: flex-end;
 }
-.contenido-art3 p{
-    font-size:1em;
+.texto-art3{
+    align-self: center;
+    font-size:large;
     text-align: justify;
     padding-left: 1rem;
     margin: .5rem;
 }
-.texto-art3{
+.article4{
+    grid-area: article4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font: large 'Roboto', sans-serif;
+    margin: 0 2rem 2rem 2rem;
+    border:solid red;
+    border-radius: 10px;
+    text-align: center;
+}
+.img-art4{
+    width: 30%;
+}
+.contenido-art4{
+    display: flex;
+    padding: 1rem;
+    background-color: rgba(223, 170, 170, 0.233);
+    border-radius: 10px;
+    margin: .5rem;
+}
+.text-art4 {
     align-self: center;
+    font-size:large;
+    text-align: justify;
+    padding-left: 1rem;
+    margin: .5rem;
 }
 /* FOOTER */
 .footer{
     grid-area: footer;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     border-top: solid black 1px;
     padding: 1rem;
-    font: x-large 'roboto', sans-serif;
-    margin: 3em;
+    font: small 'roboto', sans-serif;
+    margin: 1rem;
 }
 .caja1-footer{
     text-align: center;
 }
 .caja2-footer{
     text-align: center;
+}
+.footer-img{
+    width: 20%;
+    height: 80%;
 }
 /* PAGINA EQUIPOS */
 .equip-container{
@@ -145,10 +185,10 @@ a{
     justify-content: space-around;
     align-items: center;
     text-align: justify;   
-    font: 1.5em 'roboto', sans-serif;
+    font: large 'roboto', sans-serif;
 }
 .titulo-equipos{
-    font: bold 3em 'roboto', sans-serif;
+    font: bold x-large 'roboto', sans-serif;
     text-align: center;
 }
 .img-equipos{
@@ -157,7 +197,7 @@ a{
 /* PAGINA SUSCRIBE */
 .head-subs{
     display: flex;
-    font: 2em 'Krona One', sans-serif;
+    font: x-large 'Krona One', sans-serif;
     border-bottom: solid red;
     justify-content: center;
     gap: 1rem;
@@ -166,7 +206,7 @@ a{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font: 3em 'roboto', sans-serif;
+    font: x-large 'roboto', sans-serif;
 }
 form{
     text-align: center;
@@ -191,12 +231,193 @@ input {
     justify-content: space-around;
     align-items: center;
     text-align: justify;   
-    font: 1.5em 'roboto', sans-serif;
+    font: large 'roboto', sans-serif;
 }
 .img-corredor{
     width: 100%;
 }
 .titulo-corredor{
-    font: bold 3em 'roboto', sans-serif;
+    font: bold x-large 'roboto', sans-serif;
     text-align: center;
+}
+
+/* MEDIA QUERIES */
+    /* TABLET */
+@media screen and (max-width: 768px) and (min-width:577px) {
+    .grid-container{
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+            "header"
+            "article1"
+            "article2"
+            "article3" 
+            "article3"
+            "article4" 
+            "article4"
+            "footer"
+        ;
+    }
+    .head-title{
+        font-size: medium;
+        justify-content: space-around;
+    }
+    .img-logo{
+        width: 10%;
+    }
+    .nav{
+        font-size: small;
+    }
+    .suscribe{
+        font-size: small;
+        padding: 0;
+        margin: 0;
+    }
+    .article1{
+        font-size: medium;
+
+    }
+    .article2{
+        font-size: medium;
+    }
+    .img-youtube{
+        width: 100%;
+    }
+    .article3{
+        font-size: medium;
+    }
+    .subt-art3{
+        font-size: medium;
+    }
+    .contenido-art3{
+        flex-direction: column;
+    }
+    .texto-art3{
+        font-size: small;
+    }
+    .img-juego{
+        height: 100%;
+        width: 100%;
+        align-self: center;
+    }
+    .article4{
+        font-size: medium;
+    }
+    .contenido-art4{
+        flex-direction: column-reverse;
+    }
+    .img-art4{
+        height: 100%;
+        width: 100%;
+        align-self: center;
+    }
+    .text-art4{
+        font-size: small;
+    }
+    .footer{
+        font-size: small;
+    }
+    .footer-img{
+        width: 20%;
+        height: 40%;
+    }
+    li{
+        padding: 4rem;
+    }
+    .head-subs{
+        font-size: medium;
+    }   
+}
+    /* MOBILE */
+@media screen and (max-width: 576px){
+    .grid-container{
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas:
+            "header"
+            "article1"
+            "article2"
+            "article3" 
+            "article3"
+            "article4" 
+            "article4"
+            "footer"
+        ;
+    }
+    .head-title{
+        font-size: small;
+        justify-content: space-around;
+    }
+    .img-logo{
+        width: 10%;
+    }
+    .nav{
+        font-size: small;
+    }
+    .suscribe{
+        font-size: small;
+        padding: 0;
+        margin: 0;
+    }
+    .article1{
+        font-size: small;
+
+    }
+    .article2{
+        font-size: small;
+    }
+    .img-youtube{
+        width: 100%;
+    }
+    .article3{
+        font-size: small;
+    }
+    .subt-art3{
+        font-size: small;
+    }
+    .contenido-art3{
+        flex-direction: column;
+    }
+    .texto-art3{
+        font-size: small;
+    }
+    .img-juego{
+        height: 100%;
+        width: 100%;
+        align-self: center;
+    }
+    .article4{
+        font-size: small;
+    }
+    .contenido-art4{
+        flex-direction: column-reverse;
+    }
+    .img-art4{
+        height: 100%;
+        width: 100%;
+        align-self: center;
+    }
+    .text-art4{
+        font-size: small;
+    }
+    .footer{
+        font-size: small;
+        flex-direction: column;
+    }
+    .footer-img{
+        width: 80%;
+        height: 80%;
+        align-self: center;
+    }
+    li{
+        padding: 2rem;
+    }
+    .head-subs{
+        font-size: small;
+    }      
+    .cont-form{
+        font-size: medium;
+    }
+    .img-corredor{
+        height: 80%;
+        width: 80%;
+    }
 }
