@@ -7,7 +7,7 @@ body {
 }
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto, 1fr);
+    grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
         "header header"
@@ -26,14 +26,15 @@ body {
     flex-direction: column;
 }
 .head-title{
-    display: flex;
-    font: x-large 'Krona One', sans-serif;
     border-bottom: solid red;
+    display: flex;
     justify-content: space-around;
+    font: x-large 'Krona One', sans-serif;
 }
-.head-title h1 {
+.title {
     margin: 0;
     align-self: center;
+    align-content: center;
 }
 .img-logo{
     width: 8%;
@@ -43,10 +44,15 @@ body {
 .suscribe{
     display: flex;
     align-self: center;
-    background-color: rgb(204, 70, 70);
+    border: solid red;
     padding: 0 1rem 0 1rem;
-    margin: 1rem 0 1rem 0;
-    border-radius: 1rem;
+    border-radius: .8rem;
+    font: large 'Krona One', sans-serif;
+}
+.suscribe:hover{
+    background-color: red;
+    transition-duration: 1seg;
+    box-shadow: 7px 13px 37px #000;
 }
 .nav{
     display: flex;
@@ -62,11 +68,16 @@ body {
 }
 li{
     display: inline;
-    padding: 10rem;
+    padding: 9rem;
 }
 a{
     text-decoration: none; 
-    color: black;}
+    color: black;
+}
+a:hover{
+    color: white;
+    transition-duration:.25s;
+}
 /* MAIN */
 .article1{
     grid-area: article1;
@@ -78,6 +89,10 @@ a{
     background-color: rgba(223, 170, 170, 0.233);
     border-radius: 20px;
 }
+.article1:hover{
+    background-color: white;
+    transition-duration: .5s; 
+}
 .article2{
     grid-area: article2;
     display: flex;
@@ -87,6 +102,10 @@ a{
     font: large 'Roboto', sans-serif;
     background-color: rgba(223, 170, 170, 0.233);
     border-radius: 20px;
+}
+.article2:hover{
+    background-color: white;
+    transition-duration: .5s; 
 }
 .img-youtube{
     height: 300px;
@@ -118,9 +137,9 @@ a{
 }
 .texto-art3{
     align-self: center;
-    font-size:large;
+    font-size:medium;
     text-align: justify;
-    padding-left: 1rem;
+    padding: 1rem;
     margin: .5rem;
 }
 .article4{
@@ -146,9 +165,9 @@ a{
 }
 .text-art4 {
     align-self: center;
-    font-size:large;
+    font-size:medium;
     text-align: justify;
-    padding-left: 1rem;
+    padding: 1rem;
     margin: .5rem;
 }
 /* FOOTER */
@@ -177,6 +196,7 @@ a{
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); 
     grid-template-rows: minmax(5, 1fr);     
     gap:2rem;
+    align-content: center;
 }
 .equipo{
     display: flex;
@@ -186,6 +206,10 @@ a{
     align-items: center;
     text-align: justify;   
     font: large 'roboto', sans-serif;
+    transition: transform 1s ease-in-out 0s;
+}
+.equipo:hover{
+    transform:scale(1.5);
 }
 .titulo-equipos{
     font: bold x-large 'roboto', sans-serif;
@@ -197,7 +221,7 @@ a{
 /* PAGINA SUSCRIBE */
 .head-subs{
     display: flex;
-    font: x-large 'Krona One', sans-serif;
+    font: large 'Krona One', sans-serif;
     border-bottom: solid red;
     justify-content: center;
     gap: 1rem;
@@ -232,6 +256,10 @@ input {
     align-items: center;
     text-align: justify;   
     font: large 'roboto', sans-serif;
+    transition: transform 1s ease-in-out 0s;
+}
+.corredor:hover{
+    transform: scale(1.1);
 }
 .img-corredor{
     width: 100%;
