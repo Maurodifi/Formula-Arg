@@ -41,6 +41,10 @@ body {
     display: flex;
     align-self: center;
 }
+.img-logo:hover{
+    transform:rotate(10deg);
+    transition-duration: 1s;
+}
 .suscribe{
     display: flex;
     align-self: center;
@@ -86,11 +90,11 @@ a:hover{
     align-items: center;
     padding: 0.5rem 2rem;
     font: large 'Roboto', sans-serif;
-    background-color: rgba(223, 170, 170, 0.233);
+    background-color: rgba(223, 170, 170, 0.459);
     border-radius: 20px;
 }
 .article1:hover{
-    background-color: white;
+    background-color: rgba(223, 170, 170, 0.164);
     transition-duration: .5s; 
 }
 .article2{
@@ -100,11 +104,11 @@ a:hover{
     align-items: center;
     padding: 0.5rem 2rem;
     font: large 'Roboto', sans-serif;
-    background-color: rgba(223, 170, 170, 0.233);
+    background-color: rgba(223, 170, 170, 0.459);
     border-radius: 20px;
 }
 .article2:hover{
-    background-color: white;
+    background-color: rgba(223, 170, 170, 0.164);
     transition-duration: .5s; 
 }
 .img-youtube{
